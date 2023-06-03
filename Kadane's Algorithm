@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+  void solve(int arr[], int size){
+   long long i,currsum=0,maxsum=INT_MIN;
+        for( i=0;i<n;i++){
+            currsum=currsum+arr[i];
+            maxsum=max(maxsum,currsum);
+            if(currsum<0){
+                currsum=0;
+            }
+        }
+        cout<<maxsum<<endl;
+  }
+// Driver Code
+int main()
+{
+   int arr[]={1,2,3,-2,5};
+   int size=sizeof(arr)/sizeof(int);
+   find(arr,size);
+    return 0;
+}
